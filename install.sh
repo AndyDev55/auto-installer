@@ -549,13 +549,13 @@ check_token
 while true; do
   clear
   echo -e "                                                                     "
-  echo -e "${RED}   ▇◤▔▔▔▔▔▔▔◥▇                                         ${NC}"
-  echo -e "${RED}   ▇▏◥▇◣┊◢▇◤▕▇        ⠀⠀                              ${NC}"  
-  echo -e "${RED}   ▇▏▃▆▅▎▅▆▃▕▇         ⠀⠀                             ${NC}"
-  echo -e "${RED}   ▇▏╱▔▕▎▔▔╲▕▇           ⠀                            ${NC}"
-  echo -e "${RED}   ▇◣◣▃▅▎▅▃◢◢▇⠀   𝑨𝒖𝒕𝒐 𝒊𝒏𝒔𝒕𝒂𝒍𝒍𝒆𝒓 𝒃𝒚 𝑨𝒏𝒅𝒚         ${NC}"
-  echo -e "${RED}   ▇▇◣◥▅▅▅◤◢▇▇     --------------------------  +           ${NC}"
-  echo -e "${RED}   ▇▇▇◣╲▇╱◢▇▇▇                                     ${NC}"
+  echo -e "${BLUE}   ▇◤▔▔▔▔▔▔▔◥▇                                         ${NC}"
+  echo -e "${BLUE}   ▇▏◥▇◣┊◢▇◤▕▇        ⠀⠀                              ${NC}"  
+  echo -e "${BLUE}   ▇▏▃▆▅▎▅▆▃▕▇         ⠀⠀                             ${NC}"
+  echo -e "${BLUE}   ▇▏╱▔▕▎▔▔╲▕▇           ⠀                            ${NC}"
+  echo -e "${BLUE}   ▇◣◣▃▅▎▅▃◢◢▇⠀   𝑨𝒖𝒕𝒐 𝒊𝒏𝒔𝒕𝒂𝒍𝒍𝒆𝒓 𝒃𝒚 𝑨𝒏𝒅𝒚         ${NC}"
+  echo -e "${BLUE}   ▇▇◣◥▅▅▅◤◢▇▇    --------------  +                  ${NC}"
+  echo -e "${BLUE}   ▇▇▇◣╲▇╱◢▇▇▇                                     ${NC}"
   echo -e "${RED}              ┏━━━┓╋╋╋╋╋╋┏┓┏┓╋┏┓             ${NC}"
   echo -e "${RED}              ┃┏━┓┃╋╋╋╋╋╋┃┃┃┃╋┃┃             ${NC}"
   echo -e "${RED}              ┃┃╋┃┃┏━━┓┏━┛┃┃┗━┛┃               ${NC}"
@@ -563,7 +563,9 @@ while true; do
   echo -e "${RED}              ┃┏━┓┃┃┃┃┃┃┗┛┃┏━┛┃╋⠀                ${NC}"
   echo -e "${RED}              ┗┛╋┗┛┗┛┗┛┗━━┛┗━━┛╋⠀              ${NC}"
   echo -e "                                                                     "
-  echo -e "BERIKUT LIST INSTALL :"
+  echo -e "${GREEN} JIKA ADA YANG ERROR LAPOR KE TELE ${NC}"
+  echo -e "                                                                     "
+  echo -e "BERIKUT LIST DARI SCRIPT INI :"
   echo "1. Install theme"
   echo "2. Uninstall theme"
   echo "3. Configure Wings"
@@ -604,6 +606,9 @@ while true; do
       ;;
       9)
       ubahhost_vps
+      ;;
+      10)
+      install_panell
       ;;
     x)
       echo "KELUAR DARI SEKRIPPP"
