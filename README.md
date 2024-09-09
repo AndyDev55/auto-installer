@@ -12,6 +12,6 @@ BUTUH LICENSE/PW CHAT TELE GUA
 bash <(curl -s https://raw.githubusercontent.com/AndyDev55/auto-installer/main/install.sh)
 ```
 
-##Creator
+## Creator
 
 - Created by [ ANDY ](https://t.me/AndyDeveloperr)
