@@ -13,7 +13,7 @@ display_welcome() {
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
   echo -e "${BLUE}[+]                AUTO INSTALLER THEMA             [+]${NC}"
-  echo -e "${BLUE}[+]                  © ANDY HOSTING                [+]${NC}"
+  echo -e "${BLUE}[+]                  © ANDY HOSTING                 [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
   echo -e "${RED}[+] =============================================== [+]${NC}"
   echo -e ""
@@ -334,6 +334,7 @@ install_panell() {
 
 # Minta input dari pengguna
 read -p "Masukkan Email: " email
+read -p "Masukkan Username Login: " username
 read -p "Masukkan Password Login: " password
 read -p "Masukkan Subdomain Panel: " subdomain
 read -p "Masukkan Domainnode: " domainnode
@@ -351,7 +352,7 @@ Andy55
 Asia/Jakarta
 $email
 $email
-andyhost
+$username
 adm
 adm
 $password
@@ -363,15 +364,19 @@ y
 yes
 A
 EOF
+echo -e "                     "
+echo -e "${GREEN} SUKSES INSTALL PANEL WAITT INSTALL WINGS"
+echo -e "                     "
+sleep 3
 # Ubah ke direktori pterodactyl
 cd /var/www/pterodactyl || { echo "Direktori tidak ditemukan"; exit 1; }
-
+s
 # Membuat lokasi baru
 php artisan p:location:make <<EOF
 $location_name
 $location_description
 EOF
-
+sleep 1
 # Membuat node baru
 php artisan p:node:make <<EOF
 $node_name
@@ -391,6 +396,9 @@ $disk_space
 2022
 /var/lib/pterodactyl/volumes
 EOF
+sleep 1
+cd
+sleep 2
 bash <(curl -s https://pterodactyl-installer.se) <<EOF
 1
 y
@@ -406,13 +414,16 @@ y
 $email
 y
 EOF
-
+echo -e "                     "
+echo -e "${GREEN} SUKSES INSTALL PANEL & WINGS"
+echo -e "                     "
+sleep 2
   echo -e "                                                       "
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
   echo -e "${GREEN}[+]                  INSTALL PANEL SUKSES              [+]${NC}"
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
-  echo -e "$(RED)SESUDAH INSTALL SILAHKAN LOGIN KE PANEL DAN SALIN TOKEN NODE NYA TRUS PILIH NOMOR 3 YANG ADA DI MENU SKRIP INI TRUS TEMPEL TOKEN DONE..$(NC)"
+  echo -e "${RED}SESUDAH INSTALL SILAHKAN LOGIN KE PANEL DAN SALIN TOKEN NODE NYA TRUS PILIH NOMOR 3 YANG ADA DI MENU SKRIP INI TRUS TEMPEL TOKEN DONE..${NC}"
   sleep 2
   clear
   exit 0
@@ -525,7 +536,7 @@ EOF
 ubahhost_vps() {
   echo -e "                                                       "
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
-  echo -e "${GREEN}[+]                    UBAH HOSTNAME VPS       [+]${NC}"
+  echo -e "${GREEN}[+]                   UBAH HOSTNAME VPS               [+]${NC}"
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
 read -p "Masukkan Hostname baru: " htnm
@@ -574,6 +585,7 @@ while true; do
   echo "7. Hack Back Panel"
   echo "8. Ubah Pw Vps"
   echo "9. Ubah Hostname Vps"
+  echo "10. Install panel"
   echo "x. Exit"
   echo -e "Masukkan pilihan 1/2/x:"
   read -r MENU_CHOICE
