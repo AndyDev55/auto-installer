@@ -370,20 +370,19 @@ echo -e "                     "
 echo -e "${GREEN} SUKSES INSTALL PANEL WAITT INSTALL WINGS"
 echo -e "                     "
 sleep 3
-cd
 # Ubah ke direktori pterodactyl
 cd /var/www/pterodactyl || { echo "Direktori tidak ditemukan"; exit 1; }
 sleep 10
 # Membuat lokasi baru
 php artisan p:location:make <<EOF
 SGP
-AUTO INSTALL PANEL BY ANDY
+AUTO-INSTALL-PANEL-BY-ANDY
 EOF
 sleep 10
 # Membuat node baru
 php artisan p:node:make <<EOF
 AndyDev
-NODE BY ANDY
+NODE-BY-ANDY
 1
 https
 $domainnode
@@ -391,9 +390,9 @@ yes
 no
 no
 $ram
-$ram
+0
 $disk_space
-$disk_space
+0
 100
 8080
 2022
