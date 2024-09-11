@@ -361,6 +361,7 @@ y
 y
 y
 y
+y
 yes
 A
 EOF
@@ -368,19 +369,20 @@ echo -e "                     "
 echo -e "${GREEN} SUKSES INSTALL PANEL WAITT INSTALL WINGS"
 echo -e "                     "
 sleep 3
+cd
 # Ubah ke direktori pterodactyl
 cd /var/www/pterodactyl || { echo "Direktori tidak ditemukan"; exit 1; }
-s
+sleep 10
 # Membuat lokasi baru
 php artisan p:location:make <<EOF
-$location_name
-$location_description
+SGP
+AUTO INSTALL PANEL BY ANDY
 EOF
-sleep 1
+sleep 10
 # Membuat node baru
 php artisan p:node:make <<EOF
-$node_name
-BY ANDY
+AndyDev
+NODE BY ANDY
 1
 https
 $domainnode
