@@ -336,6 +336,9 @@ install_panell() {
 read -p "Masukkan Email: " email
 read -p "Masukkan Username Login: " username
 read -p "Masukkan Password Login: " password
+read -p "Masukkan Database: " dtbs
+read -p "Masukkan Database username: " dtbsusn
+read -p "Masukkan Database passwd: " dtbspaswd
 read -p "Masukkan Subdomain Panel: " subdomain
 read -p "Masukkan Domainnode: " domainnode
 read -p "Masukkan nama node: " node_name
@@ -345,10 +348,9 @@ read -p "Masukkan jumlah maksimum disk space (dalam MB): " disk_space
 
 bash <(curl -s https://pterodactyl-installer.se) <<EOF
 0
-AndyNoCounter
-anjyy
-slebew
-Andy55
+$dtbs
+$dtbsusn
+$dtbspaswd
 Asia/Jakarta
 $email
 $email
@@ -361,9 +363,8 @@ y
 y
 y
 y
-y
 yes
-A
+1
 EOF
 echo -e "                     "
 echo -e "${GREEN} SUKSES INSTALL PANEL WAITT INSTALL WINGS"
@@ -408,8 +409,8 @@ y
 y
 $subdomain
 y
-anjyy
-slebew
+$dtbsusn
+$dtbspaswd
 y
 $domainnode
 y
