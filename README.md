@@ -4,6 +4,7 @@
 
 ## AUTO INSTALLER SCRIPT
 
+⚠️ DI SARANKAN UNTUK MEMBELI YANG PREMIUM DAN KALAU BELI BISA REQ KEY UNTUK LOGIN, HARGA HANYA 10K,  MAU BELI? WA GW ADA DI BAWAH
 
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/AndyDev55/auto-installer/main/install.sh)
