@@ -13,8 +13,9 @@ bash <(curl -s https://raw.githubusercontent.com/AndyDev55/auto-installer/main/i
 
 Script ini memerlukan kunci untuk melanjutkan. Gunakan key berikut saat diminta:
 
+KEY:
 ```
-KEY: AndyyHosting
+AndyyHosting
 ```
 ---
 
