@@ -1,16 +1,14 @@
-# :bird: Auto Installer Script By Andy
+# :bird: Andy Hosting
 
 
 
 ## AUTO INSTALLER SCRIPT
 
-JANGAN DIJUAL BELIKAN YE BWANG !!!
-BUTUH LICENSE/PW CHAT TELE GUA
-[ CHAT TELE ](https://t.me/AndyDeveloperr)
 
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/AndyDev55/auto-installer/main/install.sh)
 ```
+
 
 ## 🛠️ **CREDIT**
 
