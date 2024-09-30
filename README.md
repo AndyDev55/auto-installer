@@ -1,8 +1,8 @@
-# :bird: Auto Installer Script By Andy
+# :bird: Hallo Saya Andy Hosting
 
 
 
-## AUTO INSTALLER SCRIPT
+## tes
 
 JANGAN DIJUAL BELIKAN YE BWANG !!!
 BUTUH LICENSE/PW CHAT TELE GUA
